@@ -13,12 +13,7 @@ const styles = StyleSheet.create({
 
 const MainLayout = () => {
     return <>
-        {/* <View style={styles.header}>
-            <Text>Header</Text>
-        </View>
-        <Slot /> */}
-        <Stack />
-        {/* <View style={styles.footer}><Text>Footer</Text></View> */}
+        <Tabs />
     </>
 }
 
