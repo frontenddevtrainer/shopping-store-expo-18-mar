@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Button } from "react-native";
+import { router } from "expo-router"
 
 const styles = StyleSheet.create({
     heading: {
@@ -9,6 +10,9 @@ const styles = StyleSheet.create({
 const ProductsPage = () => {
     return <View>
         <Text style={styles.heading}>Products Page</Text>
+        <Button title="Settings" onPress={()=>{
+            router.navigate("/settings");
+        }}></Button>
     </View>
 }
 
